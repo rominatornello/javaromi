@@ -28,7 +28,7 @@ public class ProblemaTercias {
 		}
 
 	}
-	
+
 	 void calculateTriplets(SortedSet<Integer> sortedSet){
 
 		 ArrayList<Triplet> tripletList =new ArrayList<Triplet>();
@@ -65,7 +65,7 @@ public class ProblemaTercias {
 	 void AreMoreThatThree(SortedSet<Integer>sortedlist) throws Exception{
 		if(sortedlist.size()<3)
 			throw new Exception("Tiene que ingresar mas de tres numeros diferentes");
-		
+
 	}
 
 	 boolean areDifferent(Integer int1, Integer int2, Integer int3) {

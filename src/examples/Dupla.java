@@ -3,8 +3,7 @@ package examples;
 import com.sun.istack.internal.NotNull;
 
 public class Dupla {
-
- @NotNull
+  @NotNull
  Integer int1;
  @NotNull
  Integer int2;
@@ -18,6 +17,21 @@ public class Dupla {
 
 	}
 
+    public Integer getInt1() {
+        return int1;
+    }
+
+    public void setInt1(Integer int1) {
+        this.int1 = int1;
+    }
+
+    public Integer getInt2() {
+        return int2;
+    }
+
+    public void setInt2(Integer int2) {
+        this.int2 = int2;
+    }
 
 }
 

@@ -79,6 +79,48 @@ public class RecursiveMatrix {
     }
 
 
+    int sumGreaterWeight(int positionX, int positionY, int sum ) {
+
+        RecursiveMatrix2 recursiveMatrix = new RecursiveMatrix2();
+        int[][] matrix;
+        matrix = recursiveMatrix.createMatrix2();
+        int value = matrix[positionX][positionY];
+        int tempSum=0;
+        //boolean flagBreak=false;
+        //matrix.length - 1 cantidad de filas
+        //matrix.length[] - 1 cantidad de columnas        //condicion de salida
+        while(true){
+            if (positionX == matrix.length - 1 && positionY == matrix[0].length - 1) {
+                sum = sum + value;
+                System.out.println("La suma mayor es: "+sum);
+                break;
+            }else {
+                if (positionY + 1 > matrix[0].length - 1) {//no hay mas columnas por recorrer recorro filas
+                    sum = sum + value;
+                    tempSum = sumGreaterWeight(positionX + 1, positionY, sum);
+                    break;
+                } else if (positionX + 1 > matrix.length - 1) {//no hay mas filas por recorrer recorro columnas
+                    sum = sum + value;
+                    tempSum = sumGreaterWeight(positionX, positionY + 1, sum);
+                    break;
+                } else if (positionX < matrix.length - 1) { //hay mas filas y columnas tengo que recorrer dos caminos posibles
+                    sum = sum + value;
+                    tempSum = sumGreaterWeight(positionX + 1, positionY, sum);
+                    break;
+                } if ( positionY < matrix[0].length - 1) {
+                    sum = sum + value;
+                    tempSum = sumGreaterWeight(positionX, positionY + 1, sum);
+                    break;
+                }
+                if (tempSum > sum)
+                    sum = tempSum;
+                break;
+            }
+        }
+
+        return sum;
+
+    }
 
 
 

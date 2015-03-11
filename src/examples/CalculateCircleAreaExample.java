@@ -16,10 +16,10 @@ public class CalculateCircleAreaExample {
                 BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
                 radius = Integer.parseInt(br.readLine());
         }
-        //if invalid value was entered
+        //if invalid val was entered
         catch(NumberFormatException ne)
         {
-                System.out.println("Invalid radius value" + ne);
+                System.out.println("Invalid radius val" + ne);
                 System.exit(0);
         }
         catch(IOException ioe)
@@ -34,7 +34,7 @@ public class CalculateCircleAreaExample {
          * where r is a radius of a circle.
          */
        
-        //NOTE : use Math.PI constant to get value of pi
+        //NOTE : use Math.PI constant to get val of pi
         double area = Math.PI * radius * radius;
        
         System.out.println("Area of a circle is " + area);
