@@ -1,4 +1,4 @@
-package examples;
+package examples.Algoritmos;
 
 import com.sun.istack.internal.NotNull;
 

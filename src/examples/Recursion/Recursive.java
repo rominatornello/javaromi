@@ -1,4 +1,4 @@
-package examples;
+package examples.Recursion;
 
 public class Recursive {
 	

@@ -1,9 +1,13 @@
-package examples;
+package examples.Recursion;
+
+import examples.Dupla;
 
 import java.util.ArrayList;
 
 /**
  * Created by romina.tornello on 2/19/2015.
+ * Encotrar en una matriz el camino de mayor peso para llegar del primer elemento al ultimo
+ * Dicese de mayor peso al que la sumatoria de los elementos del camino es el mayor
  */
 public class RecursiveMatrix {
 
@@ -55,7 +59,7 @@ public class RecursiveMatrix {
             System.out.println("La suma del camino con mas peso es: " + sum);
 
             for(Dupla object: root){
-                System.out.println("indice:" + object.int1+","+object.int2);
+               // System.out.println("indice:" + object.int1+","+object.int2);
             }
 
         } else {

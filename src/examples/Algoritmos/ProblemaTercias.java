@@ -1,7 +1,15 @@
-package examples;
+package examples.Algoritmos;
 
 
 import java.util.*;
+
+/** Resolucion de Problema de Tercias
+ * Consigna:
+ * 1-ingresar tres o mas nuneros distintos
+ * 2- Forma las tripletas posibles con los numeros ingresados n1,n2 y n3
+ * 3-El resultado a devolver sera la cantidad de trilpletas que son sucesiones aritmeticas
+ * Son sucesiones aritmeticas si eturn n2-n1 == n3-n2;
+ * **/
 
 public class ProblemaTercias {
 	
@@ -78,13 +86,3 @@ public class ProblemaTercias {
 }
  
 
-
- //todo
-//agregar exepcion de si son iguales
-//agregar atributo a triplex si es sucesion  LISTO
-//poder ingresar  x cantidad de numeros para las tripletas LISTO
-//usar el ordenador del collecion LISTO SE USO EL ORDENADOR DE ARRAY
-//separar el ingreso por teclado de el armado de tripletas LISTO�
-
-//todo version 2
-//agregar validacion tripleta de si son eguales no te deje crearlos antes de crear tripletas

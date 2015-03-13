@@ -1,8 +1,8 @@
-package examples;
+package examples.Recursion;
+
+import examples.Dupla;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.SortedSet;
 
 /**
  * Created by romina.tornello on 2/23/2015.
@@ -35,8 +35,6 @@ public class RecursiveMatrix2 {
         return matrix;
     }
 
-//  matrix[0][0] = 1;
-//  matrix[1][0] = 0;
     int sumGreaterWeight(int[][] matrix,int positionX, int positionY) {
         int sum;
         if (positionX > (matrix.length - 1) || (positionY > matrix.length - 1)) {
