@@ -29,6 +29,7 @@ public class StringExamples {
           char signo = '!';
          materiasRendidas.append(signo);
 
+         System.out.print(materiasRendidas.hashCode());
          System.out.print("materias rendidas: "+ materiasRendidas.toString());
 
 

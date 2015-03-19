@@ -1,4 +1,5 @@
 package examples;
+import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 public class DemoThrowsException {
 	
@@ -6,6 +7,7 @@ public class DemoThrowsException {
 		        throws InterruptedException {		       
 		        DemoThrowsException demo = null;
 		        demo.findFile("lala");
+
 		        
 		    }
 	
