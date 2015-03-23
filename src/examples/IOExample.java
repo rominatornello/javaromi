@@ -10,13 +10,13 @@ public class IOExample {
 	     IOExample example = new IOExample();
 		 File fileNew = new File("C:/Users/romina.tornello/Downloads/ioexample/archivo.txt");
 		 //create a file
-		 example.createFile(fileNew);
+	/*	 example.createFile(fileNew);
 
 		 //read file
 		  example.readFile(fileNew);
 
 		  //createTempFile
-		  example.createTempFile();
+		  example.createTempFile();*/
 
 		 //create and read a serializable object
 	     Person person = new Person("pablo", "pablo@mail.com");

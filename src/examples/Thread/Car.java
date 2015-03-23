@@ -2,6 +2,7 @@ package examples.Thread;
 
 import examples.Dupla;
 import examples.Wagon;
+import org.omg.SendingContext.RunTime;
 
 import java.util.ArrayList;
 
@@ -66,6 +67,7 @@ public class Car extends Thread {
             }
             System.out.println();
         }
+
     }
 
 

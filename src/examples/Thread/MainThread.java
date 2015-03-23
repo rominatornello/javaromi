@@ -9,6 +9,11 @@ public class MainThread {
 
         Car treadBlue = new Car(1);
         treadBlue.start();
+        try {
+            treadBlue.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         Car treadRed = new Car(0);
         treadRed.start();
         Car treadGreen = new Car(0);
